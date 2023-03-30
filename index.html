@@ -3,10 +3,11 @@
 	<head>
 	    <!-- meta character set -->
 	    <meta charset="utf-8">
-	    <title>Розклад руху автобусів м.Сміли</title>
+	    <title>SmilaBusTime</title>
 	    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	    <!-- Mobile Specific Meta -->
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		
 
 
 	    <!-- bootstrap.min -->
@@ -37,13 +38,62 @@
 				
 					<div class="col-md-8"><a href="https://www.smila-rada.gov.ua/"><img src="img/logo_gs_full.png" width="400" height="100" class="img-responsive center-block"/></a></div>
 					<div class="col-md-4" id="busclock"></div>
+					<div id="weather"></div>
+					<script>
+				 // Defining variables
+				 const weatherDiv = document.getElementById("weather");
+      const apiKey = "8Iw64Dhn10LJmCngufpkmLfAbnQ8uZK7"; // Replace with your API Key
+      const city = "Сміла"; // Replace with desired city
+
+      // Fetching weather data from API
+      fetch(
+        'https://api.tomorrow.io/v4/timelines?location=40.75872069597532,-73.98529171943665&fields=temperature&timesteps=1h&units=metric&apikey=8Iw64Dhn10LJmCngufpkmLfAbnQ8uZK7'
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          // Creating HTML elements to display weather data
+          const cityName = document.createElement("h1");
+          cityName.textContent = data.name;
+
+          const weatherCondition = document.createElement("p");
+          weatherCondition.textContent = data.weather[0].main;
+
+          const weatherTemperature = document.createElement("p");
+          weatherTemperature.textContent = `${data.main.temp}°C`;
+
+          // Appending elements to weather div
+          weatherDiv.appendChild(cityName);
+          weatherDiv.appendChild(weatherCondition);
+          weatherDiv.appendChild(weatherTemperature);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+					</script>
+					
 					
 					
 				<h5><strong><marquee behavior="scroll" direction="left"><font color="#FF4500">Тут може бути ваша реклама<img src="emoji/radio.png" height="20" width="20"/></marquee></h5></strong></font>
-				<h5><center><a href="https://googlove.netlify.app/donate/index.html"><img src="img/donate.png" style="width:400px;height:215px;"></a></h5></center>
-					<h5 class="col-md-12 text-center"><font color="#FF4500"><strong><img src="emoji/robot.png" height="20" width="20"/>Бот розкладу автобусів </i>:&nbsp;<a href="https://t.me/SmilaBusTime_bot" target="_blank">Вже працює!</a></h5></font></strong>
+				
+
+				<div style="display:flex; align-items:center;">
+					<div style="flex:1;">
+					  <a href="https://googlove.netlify.app/donate/index.html">
+						<img src="img/donate.png" style="width:100%;">
+					  </a>
+					</div>
+					<div style="flex:1;">
+					  <a href="https://bit.ly/3R1rmoG">
+						<img src="img/google_p.png" style="width:75%;">
+					  </a>
+					</div>
+				  </div>
+				
+				  
+				 
+					<center><h5 class="col-md-12 text-center"><font color="#FF4500"><strong><img src="emoji/robot.png" height="20" width="20"/>Бот розкладу автобусів </i>:&nbsp;<a href="https://t.me/SmilaBusTime_bot" target="_blank">Вже працює!</a></h6></font></strong></center>
 					<center>
-					<p><strong><font color="#FF4500"><h5><img src="emoji/first-quarter-moon.png" height="20" width="20"/>Світла/Темна — тема:</h5></strong></p></font>
+					<p><strong><font color="#FF4500"><h5><img src="emoji/first-quarter-moon.png" height="20" width="20"/>Світла/Темна:</h5></strong></p></font>
 							<input type="checkbox" class="checkbox" id="checkbox">
 							<label for="checkbox" class="label">
 								<i class="fas fa-moon"></i>
@@ -2073,17 +2123,25 @@
 	     <footer>
         <div class="container text-center">
                 <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-				<h5 class="copyright"><b> <font color="#FF4500"><img src="emoji/copyright.png" height="20" width="20"/>2022. All rights reserved, Developed:&nbsp;<a href="https://www.instagram.com/googlove_official/ " target="_blank"><img src="emoji/man-technologist.png" height="15" width="15"/>&nbsp;Yaroslav Gogulov</a></i>&nbsp;& QA-Engineer&nbsp;(Testing):&nbsp;<a href="https://www.instagram.com/mangoooo98/" target="_blank"><img src="emoji/man-technologist.png" height="15" width="15"/>&nbsp;Eduard Lozovski</a></i></h5></b></font>
-         <h5 class="copyright"><b> <font color="#FF4500"> </h5></b></font>
+				<h5 class="copyright"><b> <font color="#FF4500"><img src="emoji/copyright.png" height="20" width="20"/>2022. All rights reserved, Developed:&nbsp;<a href="https://www.instagram.com/googlove_official/ " target="_blank"><img src="emoji/man-technologist.png" height="15" width="15"/>&nbsp;Yaroslav Gogulov</a></i>
 		 <div class="container text-center">
 		 
 		 </div><!--//container-->
         </div><!--//container-->
 		<div class="container text-center">
-		<h5 class="copyright"><b><font color="#FF4500"><img src="emoji/rocket.png" height="20" width="20"/>Зворотній зв'язок </i> з розробником: <a href="https://t.me/flame4ost" target="_blank">писати сюди</a></h5></b></font>
+		<h5 class="copyright"><b><font color="#FF4500"><img src="emoji/rocket.png" height="20" width="20"/>Зворотній зв'язок </i> з розробником: <a href="https://t.me/flame4ost" target="_blank">писати сюди</a><img src="emoji/writing-hand.png" height="20" width="20"/></h5></b></font>
 		 </div><!--//container-->
 		 <div class="container text-center">
-		<h5 class="copyright"><strong> <font color="#FF4500"><img src="emoji/briefcase.png" height="15" width="15"/>Канал</i>&nbsp;Сергій Ананко:&nbsp;<a href="https://t.me/smila2022" target="_blank">підписатись</a></h5></strong></b> </font>
+			<h5 class="copyright">
+				<strong>
+					<font color="#FF4500">
+						<img src="emoji/briefcase.png" height="15" width="15"/>
+						Канал Сергій Ананко:
+						<a href="https://t.me/smila2022" target="_blank">підписатись</a>
+						<img src="emoji/official.png" height="15" width="15">
+					</font>
+				</strong>
+			</h5>
 		 
 	    </div><!--//container-->
 	   </footer>
@@ -2146,6 +2204,7 @@ function digitalWatch() {
 	document.getElementById('busclock').innerHTML =  '<span class="clockDW '+dayClass+'">' + daysArray[myDay] + '</span> ' + hours + ':' + minutes;
 	setTimeout(digitalWatch, 30*1000); // через 30 сек запустим снова
 }
+
 // открывает вкладку подходящего на сегодня дня недели
 function activateTab() {
 	var date = new Date();
@@ -2153,6 +2212,7 @@ function activateTab() {
 	if (day === null)                        day = (date.getDay()+'').replace(0, 7) -1;
 	$('.daytype a[data-days*="'+day+'"]').trigger('click'); // кликаем по нужной нам вкладке
 }
+
 
 digitalWatch();
 setATRTimes();
