@@ -39,37 +39,7 @@
 					<div class="col-md-8"><a href="https://www.smila-rada.gov.ua/"><img src="img/logo_gs_full.png" width="400" height="100" class="img-responsive center-block"/></a></div>
 					<div class="col-md-4" id="busclock"></div>
 					<div id="weather"></div>
-					<script>
-				 // Defining variables
-				 const weatherDiv = document.getElementById("weather");
-      const apiKey = "8Iw64Dhn10LJmCngufpkmLfAbnQ8uZK7"; // Replace with your API Key
-      const city = "Сміла"; // Replace with desired city
-
-      // Fetching weather data from API
-      fetch(
-        'https://api.tomorrow.io/v4/timelines?location=40.75872069597532,-73.98529171943665&fields=temperature&timesteps=1h&units=metric&apikey=8Iw64Dhn10LJmCngufpkmLfAbnQ8uZK7'
-      )
-        .then((response) => response.json())
-        .then((data) => {
-          // Creating HTML elements to display weather data
-          const cityName = document.createElement("h1");
-          cityName.textContent = data.name;
-
-          const weatherCondition = document.createElement("p");
-          weatherCondition.textContent = data.weather[0].main;
-
-          const weatherTemperature = document.createElement("p");
-          weatherTemperature.textContent = `${data.main.temp}°C`;
-
-          // Appending elements to weather div
-          weatherDiv.appendChild(cityName);
-          weatherDiv.appendChild(weatherCondition);
-          weatherDiv.appendChild(weatherTemperature);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-					</script>
+					
 					
 					
 					
@@ -129,6 +99,7 @@
 													<div class="col-md-12 timelist" style="color:#000000">
 														<strong class="busstop">🚏Вул.&nbsp;Волошкова:</strong>
 														<span>07:10</span>
+														<span>09:15</span>
 														<span>11:00</span>
 														<span>17:20</span>
 													</div>
@@ -138,7 +109,7 @@
 														<span>08:35</span>
 														<span>10:31</span>
 														<span>11:20</span>
-														<span>17:01</span>
+														<span>17:00</span>
 														<span>17:50</span>
 													</div>
 													<div class="col-md-12 timelist">
@@ -489,10 +460,10 @@
 														<span>18:20<em>(пн-пт)</em></span>
 														<span>18:50</span>
 														<span>19:10</span>
-														<span>19:35</span>
-														<span>20:15</span>
+														<span>19:40</span>
+														<span>20:25</span>
 														<span>21:10</span>
-														
+														<span>22:15</span>
 													</div>
 												
 													
@@ -588,16 +559,16 @@
 														<span>17:27</span>
 														<span>17:35<em>(пн-пт)</em></span>
 														<span>17:43</span>
-														<span>18:02</span>
+														<span>18:03</span>
 														<span>18:20</span>
 														<span>18:40</span>
-														<span>19:00<em>(пн-пт)</em></span>
+														<span>19:05<em>(пн-пт)</em></span>
 														<span>19:35</span>
-														<span>19:50</span>
-														<span>20:20</span>
-														<span>20:55</span>
+														<span>19:55</span>
+														<span>20:30</span>
+														<span>21:05</span>
 														<span>21:40</span>
-														
+														<span>22:45</span>
 													</div>
 													
 												<div class="col-md-12 timelist">
@@ -891,18 +862,18 @@
 														<span>09:30<em>(пн-пт)</em></span>
 														<span>10:25</span>
 														<span>10:40<em>(пн-пт)</em></span>
-														<span>11:30</span>
-														<span>11:55<em>(пн-пт)</em></span>
+														<span>11:32</span>
+														<span>11:45<em>(пн-пт)</em></span>
 														
 													
 													</div>
 
 													<div class="col-md-12 timelist" style="color:#000000">
 														<strong class="busstop">Обід:</strong>
-														<span>13:05</span>
+														<span>13:10</span>
 														<span>13:30<em>(пн-пт)</em></span>
 														<span>14:25</span>
-														<span>14:38<em>(пн-пт)</em></span>
+														<span>14:47<em>(пн-пт)</em></span>
 													
 													</div>
 
@@ -910,7 +881,7 @@
 														<strong class="busstop">Вечір:</strong>
 														<span>15:25</span>
 														<span>16:05<em>(пн-пт)</em></span>
-														<span>16:30</span>
+														<span>16:35</span>
 														
 													</div>
 													<div class="col-md-12 timelist">
@@ -923,12 +894,12 @@
 												<div class="row">
 													<div class="col-md-12 timelist" style="color:#000000">
 														<strong class="busstop">Лікарня ім.Семашка(Ранок):</strong>
-														<span>07:40<em>(о 07:35 перехрестя Гречківка, через Підгосп)</em></span>
-														<span>07:55<em>(пн-пт)</em></span>
+														<span>07:35<em>(о 07:30 перехрестя Гречківка, через Підгосп)</em></span>
+														<span>07:51<em>(пн-пт)</em></span>
 														<span>08:38</span>
 														<span>09:00<em>(пн-пт)</em></span>
-														<span>09:45</span>
-														<span>10:05<em>(пн-пт)</em></span>
+														<span>09:41</span>
+														<span>10:10<em>(пн-пт)</em></span>
 														<span>11:00</span>
 														<span>11:15<em>(пн-пт)</em></span>
 														
@@ -938,17 +909,17 @@
 														<strong class="busstop">Обід:</strong>
 														<span>12:10</span>
 														<span>12:50<em>(пн-пт)</em></span>
-														<span>13:54<em>(о 13:48 перехрестя Гречківка, через Підгосп)</em></span>
+														<span>13:51<em>(о 13:46 перехрестя Гречківка, через Підгосп)</em></span>
 														<span>14:00<em>(пн-пт)</em></span>
 														<span>14:55</span>
 													</div>
 
 													<div class="col-md-12 timelist" style="color:#000000">
 														<strong class="busstop">Вечір:</strong>
-														<span>15:15<em>(пн-пт)</em></span>
+														<span>15:10<em>(пн-пт)</em></span>
 														<span>16:05</span>
 														<span>16:35<em>(пн-пт)</em></span>
-														<span>17:10</span>
+														<span>17:08</span>
 													
 													</div>
 											
