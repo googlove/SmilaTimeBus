@@ -46,7 +46,7 @@
 						<h5>
 							<strong>
 								<marquee behavior="scroll" direction="right">
-									<span style="color: #FF3200;">📰Тут може бути реклама📰</span>
+									<span style="color: #FF3200;">📰Тут може бути ваша реклама📰</span>
 								</marquee>
 							</strong>
 						</h5>
@@ -80,7 +80,28 @@
 					
 					
 					<div class="col-md-12 text-center"><font color="#FF4500"><h5><strong><img src="emoji/gear.png" height="20" width="20"/>Чинний з 20 червня 2022 року</h5></strong></font></div>
-				
+					
+					<table align="center" border="1">
+						<tr>
+							<td>
+								<table border="0">
+									<tr>
+										<td>
+											<input type="text" id="busNumberInput" placeholder="Введіть номер автобуса">
+										</td>
+										<td>
+											<button onclick="searchBus()">🔎Пошук</button>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+&nbsp; &nbsp; &nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
 							<div class="col-md-12">
 							<div class="tc-accordion" id="accordion1">
 							<div class="panel">
@@ -158,10 +179,10 @@
 													<div class="col-md-12 timelist" style="color:#000000">
 														<strong style="font-size: 1.2em;" class="busstop">🏕️Тимурівець:</strong>
 														<ul>
-															<li><span>06:45</span><em><strong>(через Гречківку - центр - л. Семашка - Тимурівець➡️)</strong></em></li>
+															<li><span>06:45</span><em><strong>(через Гречківку - центр - КНП "Смілянська міська лікарня" - Тимурівець➡️)</strong></em></li>
 															<li><span>07:45</span></li>
 															<li><span>08:40</span></li>
-															<li><span>09:40</span><em><strong>(через л. Семашка - центр - магазин на вул.&nbsp;Петра Сагайдачного(Громова)➡️)</strong></em></li>
+															<li><span>09:40</span><em><strong>(через КНП "Смілянська міська лікарня" - центр - магазин на вул.&nbsp;Петра Сагайдачного(Громова)➡️)</strong></em></li>
 															<li><span>11:30</span></li>
 															<li><span>13:00</span></li>
 														</ul>
@@ -170,13 +191,13 @@
 														<strong style="font-size: 1.2em;" class="busstop">🌃Вечір:</strong>
 														<ul>
 															<li><span>16:00</span><em><strong>(через Центр - магазин на вул.&nbsp;Петра Сагайдачного (Громова) - Тимурівець)</strong></em></li>
-															<li><span>17:10</span><em><strong>(через л. Семашка - центр - магазин на вул. Громова)</strong></em></li>
+															<li><span>17:10</span><em><strong>(через КНП "Смілянська міська лікарня" - центр - магазин на вул. Громова)</strong></em></li>
 														</ul>
 													</div>
 													<div class="col-md-12 timelist" style="color:#000000">
 														<strong style="font-size: 1.2em;" class="busstop">🌩️ Вул.&nbsp;Петра Сагайдачного &nbsp;(Громова) (магазин):</strong>
 														<ul>
-															<li><span>06:55</span><em><strong>(через Центр ➡️ л. Семашка ➡️ Тимурівець➡️)</strong></em></li>
+															<li><span>06:55</span><em><strong>(через Центр ➡️ КНП "Смілянська міська лікарня" ➡️ Тимурівець➡️)</strong></em></li>
 															<li><span>07:55</span></li>
 															<li><span>08:55</span></li>
 															<li><span>10:50</span></li>
@@ -594,7 +615,7 @@
 							</div>
 							<div class="panel">
 								<h4 class="acdn-title">
-									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse5"  class="collapsed"><span class="busname">№32</span>Ст.Шевченко — лікарня ім.Семашко</a>
+									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse5"  class="collapsed"><span class="busname">№32</span>Ст.Шевченко — КНП "Смілянська міська лікарня" </a>
 								</h4>
 								<div id="collapse5" class="panel-collapse collapse">
 
@@ -604,7 +625,7 @@
 									<div class="tc-tabs">
 										<ul class="nav nav-tabs">
 											<li class="active daytype"><a data-toggle="tab" data-days="01234" href="#tab7">Ст.Шевченко</a></li>
-											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab8">Лікарня ім.Семашко</a></li>
+											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab8">КНП "Смілянська міська лікарня" </a></li>
 										</ul>
 										<div class="tab-content">
 											<div id="tab7" class="tab-pane fade in active">
@@ -641,12 +662,12 @@
 											<div id="tab8" class="tab-pane fade weekend">
 												<div class="row">
 													<div class="col-md-12 timelist" style="color:#000000">
-														<strong style="color: #b31a50;">⏰Години відправлення від лікарні ім.Семашко</strong>
+														<strong style="color: #b31a50;">⏰Години відправлення від КНП "Смілянська міська лікарня" </strong>
 													</div>
 													<div class="col-md-12 timelist" style="color:#000000">
 													<strong style="color: #b31a50;">🚍**КРІМ СУБОТИ, НЕДІЛІ, СВЯТКОВИХ ДНІВ!</strong><br/>
 													<strong style="color: #b31a50;">⏰Інтервали між зупинками 2-4-6 хвилин</strong><br/>
-														<strong class="busstop">лікарня ім.Семашко:</strong>
+														<strong class="busstop">лікарня КНП "Смілянська міська лікарня":</strong>
 														<span>07:30<em>*</em></span>
 														<span>08:13</span>
 														<span>09:30<em>*</em></span>
@@ -674,7 +695,7 @@
 							</div>
 							<div class="panel">
 								<h4 class="acdn-title">
-									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse6"  class="collapsed"><span class="busname">№40</span>Переїзд 914 (с. Мала Яблунівка) —  лікарня ім.Семашка</a>
+									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse6"  class="collapsed"><span class="busname">№40</span>Переїзд 914 (с. Мала Яблунівка) — КНП "Смілянська міська лікарня"</a>
 								</h4>
 								<div id="collapse6" class="panel-collapse collapse">
 
@@ -684,7 +705,7 @@
 									<div class="tc-tabs">
 										<ul class="nav nav-tabs">
 											<li class="active daytype"><a data-toggle="tab" data-days="01234" href="#tab9">Переїзд 914 (с. Мала Яблунівка)</a></li>
-											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab10">лікарня ім.Семашка</a></li>
+											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab10">КНП "Смілянська міська лікарня" </a></li>
 										</ul>
 										<div class="tab-content">
 											<div id="tab9" class="tab-pane fade in active">
@@ -692,7 +713,7 @@
 													<div class="col-md-12 timelist" style="color:#000000">
 													<strong style="color: #b31a50;">⏰Інтервали між зупинками 3-5-7 хвилин</strong><br/>
 														<strong style="color: #b31a50;">🚍Автобус рухається через район РПЗ</strong><br/>
-														<strong style="color: #b31a50;">🚍Автобус було відправлено до лікарні Семашко від с.М.Яблунівка</strong><br/>
+														<strong style="color: #b31a50;">🚍Автобус було відправлено до КНП "Смілянська міська лікарня" від с.М.Яблунівка</strong><br/>
 														<strong style="color: #b31a50;">📅Щоденно, крім суботи та неділі!</strong><br/>
 														<strong class="busstop">🚧Переїзд 914 (с. Мала Яблунівка).(Ранок): </strong>
 														<span>06:35<em>(вет.лікарня)</em></span>
@@ -718,8 +739,8 @@
 											<div id="tab10" class="tab-pane fade weekend">
 												<div class="row">
 													<div class="col-md-12 timelist" style="color:#000000">
-														<strong style="color: #b31a50;">⏰Години відправлення від лікарні ім.Семашка: </strong><br/>
-														<strong class="busstop">лікарня ім.Семашка(Ранок):</strong>
+														<strong style="color: #b31a50;">⏰Години відправлення від КНП "Смілянська міська лікарня": </strong><br/>
+														<strong class="busstop">КНП "Смілянська міська лікарня"(Ранок):</strong>
 														<span>07:00</span>
 														<span>08:02</span>
 														<span>09:40</span>
@@ -854,7 +875,7 @@
 
 							<div class="panel">
 								<h4 class="acdn-title">
-									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse9"  class="collapsed"><span class="busname">№34</span>Стадіон "Локомотив" —  лікарня ім.Семашка</a>
+									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse9"  class="collapsed"><span class="busname">№34</span>Стадіон "Локомотив" — КНП "Смілянська міська лікарня"</a>
 								</h4>
 								<div id="collapse9" class="panel-collapse collapse">
 
@@ -864,7 +885,7 @@
 									<div class="tc-tabs">
 										<ul class="nav nav-tabs">
 											<li class="active daytype"><a data-toggle="tab" data-days="01234" href="#tab15">🏟️Стадіон "Локомотив"</a></li>
-											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab16">🏥Лікарня ім.Семашка</a></li>
+											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab16">🏥КНП "Смілянська міська лікарня"</a></li>
 										</ul>
 										<div class="tab-content">
 											<div id="tab15" class="tab-pane fade in active">
@@ -910,7 +931,7 @@
 											<div id="tab16" class="tab-pane fade weekend">
 												<div class="row">
 													<div class="col-md-12 timelist" style="color:#000000">
-														<strong style="font-size: 1.1em;" class="busstop">🏥Лікарня ім.Семашка(Ранок):</strong>
+														<strong style="font-size: 1.1em;" class="busstop">🏥КНП "Смілянська міська лікарня"(Ранок):</strong>
 														<span>07:35<em>(о 07:30 перехрестя Гречківка, через Підгосп)</em></span>
 														<span>07:50<em>(пн-пт)</em></span>
 														<span>08:38</span>
@@ -1012,19 +1033,19 @@
 						
 							<div class="panel">
 								<h4 class="acdn-title">
-									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse11"  class="collapsed"><span class="busname">№48</span>Вул.&nbsp; Федорова — лікарня Семашка</a>
+									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse11"  class="collapsed"><span class="busname">№48</span>Вул.&nbsp;Федорова — КНП "Смілянська міська лікарня"</a>
 								</h4>
 								<div id="collapse11" class="panel-collapse collapse">
 									<div class="tc-tabs">
 										<ul class="nav nav-tabs">
 											<li class="active daytype"><a data-toggle="tab" data-days="0123456" href="#tab18">Вул.&nbsp; Федорова</a></li>
-											<li class="daytype"><a data-toggle="tab" data-days="456" href="#tab43">лікарня Семашка</a></li>
+											<li class="daytype"><a data-toggle="tab" data-days="456" href="#tab43">КНП "Смілянська міська лікарня"</a></li>
 										</ul>
 										<div class="tab-content">
 											<div id="tab18" class="tab-pane fade in active">
 												<div class="row">
 													<div class="col-md-12 timelist" style="color:#000000">
-														<strong style="color: #b31a50; font-size: 1.1em;">🚍Автобус було відправлено від вул.Федорова до лікарні Семашка.</strong><br/>
+														<strong style="color: #b31a50; font-size: 1.1em;">🚍Автобус було відправлено від вул.Федорова до КНП "Смілянська міська лікарня"</strong><br/>
 														<strong style="color: #b31a50; font-size: 1.1em;">⌚Інтервали між зупинками 2-3-5 хвилин</strong><br/>
 														<strong style="color: #b31a50; font-size: 1.1em;">🚍**КРІМ СУБОТИ, НЕДІЛІ, СВЯТКОВИХ ДНІВ!</strong><br/>
 														<strong class="busstop">Вул.Федорова:</strong>
@@ -1060,10 +1081,10 @@
 													<div id="tab43" class="tab-pane fade weekend">
 														<div class="row">
 														<div class="col-md-12 timelist" style="color:#000000">	
-														<strong style="color: #b31a50;">🚍Автобус було відправлено від лікарні Семашка до вул. Федорова.</strong><br/>
+														<strong style="color: #b31a50;">🚍Автобус було відправлено від КНП "Смілянська міська лікарня" до вул. Федорова.</strong><br/>
 														<strong style="color: #b31a50;">🚍**КРІМ СУБОТИ, НЕДІЛІ, СВЯТКОВИХ ДНІВ!</strong><br/>
 														<strong style="color: #b31a50;">⌚Інтервали між зупинками 2-3-5 хвилин</strong><br/>
-														<strong class="busstop">🏥 Лікарня ім.Семашко:</strong>
+														<strong class="busstop">🏥КНП "Смілянська міська лікарня":</strong>
 														<span>07:25<em>*</em></span>
 														<span>07:55</span>
 														<span>08:25<em>*</em></span>
@@ -1095,20 +1116,20 @@
 
 							<div class="panel">
 								<h4 class="acdn-title">
-									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse12"  class="collapsed"><span class="busname">№49</span>с.м.Яблунівка — лікарня ім.Семашка</a>
+									<a data-toggle="collapse" data-parent="#accordion1" href="#collapse12"  class="collapsed"><span class="busname">№49</span>с.М.Яблунівка — КНП "Смілянська міська лікарня"</a>
 								</h4>
 								<div id="collapse12" class="panel-collapse collapse">
 
 									<div class="tc-tabs">
 										<ul class="nav nav-tabs">
-											<li class="active daytype"><a data-toggle="tab" data-days="01234" href="#tab19">с.м.Яблунівка</a></li>
-											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab20">лікарня ім.Семашка</a></li>
+											<li class="active daytype"><a data-toggle="tab" data-days="01234" href="#tab19">с.М.Яблунівка</a></li>
+											<li class="daytype"><a data-toggle="tab" data-days="56" href="#tab20">КНП "Смілянська міська лікарня"</a></li>
 										</ul>
 										<div class="tab-content">
 											<div id="tab19" class="tab-pane fade in active">
 												<div class="row">
 													<div class="col-md-12 timelist" style="color:#000000">
-													<strong style="color: #b31a50;">🚍Автобус було відправлено від с.м.Яблунівка до лікарні Семашка</strong><br/>
+													<strong style="color: #b31a50;">🚍Автобус було відправлено від с.М.Яблунівка до КНП "Смілянська міська лікарня"</strong><br/>
 														<strong style="color: #b31a50;">🚍*Крім суботи, неділі, святкових днів!</strong><br/>
 														<strong style="color: #b31a50;">⌚Інтервали між зупинками 2-3-5 хвилин</strong><br/>
 														<strong class="busstop">с.М.Яблунівка:</strong>
@@ -1141,10 +1162,10 @@
 											<div id="tab20" class="tab-pane fade weekend">
 												<div class="row">
 													<div class="col-md-12 timelist" style="color:#000000">
-													<strong style="color: #b31a50;">🚍Автобус було відправлено від лікарні Семашка до с.м.Яблунівка</strong><br/>
+													<strong style="color: #b31a50;">🚍Автобус було відправлено від КНП "Смілянська міська лікарня" до с.М.Яблунівка</strong><br/>
 														<strong style="color: #b31a50;">🚍*Крім суботи, неділі, святкових днів!</strong><br/>
 														<strong style="color: #b31a50;">⌚Інтервали між зупинками 2-3-5 хвилин</strong><br/>
-														<strong class="busstop">лікарня ім.Семашка:</strong>
+														<strong class="busstop">КНП "Смілянська міська лікарня":</strong>
 														<span>07:45</span>
 														<span>08:25<em>*</em></span>
 														<span>09:10</span>
@@ -2498,6 +2519,31 @@ setATRTimes();
 makeGrayTimes();
 activateTab();
 
+function searchBus() {
+            // Отримати введений номер автобуса
+            var busNumber = document.getElementById("busNumberInput").value;
+
+            // Отримати всі елементи з класом "busname"
+            var busElements = document.querySelectorAll(".busname");
+
+            // Перевірити кожний елемент з класом "busname" на відповідність введеному номеру
+            busElements.forEach(function(busElement) {
+                var elementBusNumber = busElement.textContent;
+                var parentPanel = busElement.closest(".panel");
+
+                if (elementBusNumber === "№" + busNumber || busNumber === "") {
+                    // Якщо номер автобуса збігається або поле порожнє, показати батьківську панель
+                    if (parentPanel) {
+                        parentPanel.style.display = "block";
+                    }
+                } else {
+                    // Якщо номер автобуса не збігається, приховати батьківську панель
+                    if (parentPanel) {
+                        parentPanel.style.display = "none";
+                    }
+                }
+            });
+        }
 
 	    </script>
 	</body>

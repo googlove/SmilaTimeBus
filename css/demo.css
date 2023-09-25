@@ -118,6 +118,8 @@
 	width: 24px;
 	height: auto;
 }
+
+
 .acdn-body {padding: 15px;border-top: 1px solid rgba(0, 0, 0, 0.04);font-size: 13px;}
 .tc-accordion .acdn-title a:after {position: absolute;content: "⬆️";color: inherit;right: 8px;top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
 .tc-accordion .acdn-title a.collapsed:after {content: "⬇️";}
@@ -131,3 +133,5 @@
 .tc-tabs .tab-content {padding: 0; margin: 0;}
 .tc-tabs .nav-tabs {border-bottom: 0;}
 .tc-tabs .nav-tabs li a {border: 0 !important;border-radius: 0;line-height: normal;font-size: 13px;color: #777;font-weight: 600;padding: 8px 20px;margin-right: 4px;margin-bottom: 4px;}
+
+
