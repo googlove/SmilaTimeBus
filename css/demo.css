@@ -135,3 +135,9 @@
 .tc-tabs .nav-tabs li a {border: 0 !important;border-radius: 0;line-height: normal;font-size: 13px;color: #777;font-weight: 600;padding: 8px 20px;margin-right: 4px;margin-bottom: 4px;}
 
 
+#searchIcon {
+    width: 20px; /* Зазначте розмір зображення лупи відповідно до ваших потреб */
+    height: auto;
+    margin-right: 5px; /* Зазначте відступ між зображенням та текстом відповідно до ваших потреб */
+    vertical-align: middle; /* Вирівнюємо зображення вертикально по середині */
+}
