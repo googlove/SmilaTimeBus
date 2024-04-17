@@ -1,0 +1,9 @@
+@keyframes blink {
+    0% { color: red; }
+    50% { color: transparent; }
+    100% { color: red; }
+}
+
+.blinking-text {
+    animation: blink 1s infinite;
+}
