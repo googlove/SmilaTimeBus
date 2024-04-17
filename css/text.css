@@ -7,3 +7,7 @@
 .blinking-text {
     animation: blink 1s infinite;
 }
+
+.container {
+    white-space: nowrap; /* Запобігає переносу тексту на новий рядок */
+}
