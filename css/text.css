@@ -8,6 +8,10 @@
     animation: blink 1s infinite;
 }
 
+strong.blinking {
+  animation: blink 1s infinite;
+}
+
 .fa-brands--viber {
     display: inline-block;
     width: 1em;
