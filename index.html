@@ -627,12 +627,7 @@
 													<strong style="color: #b31a50;">⏰Години відправлення від ст.Шевченка</strong><br/>
 													<strong style="color: #b31a50;">⏰Інтервали між зупинками 2-4 хвилин</strong><br/>
 														<strong class="busstop">Ст.Шевченко:</strong>
-														<div class="question">
 														<span>06:30<em>&nbsp;(через Плоске)</em></span>
-														<span class="question-mark">?</span>
-														<div class="tooltip hidden">
-															<p>Щоденно</p>
-														</div>
 														<span>07:02<em>&nbsp;(через Плоске)</em></span>
 														<span>08:30<em>&nbsp;(через Плоске)</em></span>
 														<span>09:10<em>&nbsp;(через Плоске)</em></span>
@@ -2542,14 +2537,6 @@ function makeGrayTimes() {
 	grayTimer = setTimeout(makeGrayTimes, 30*1000); // через 30 сек запустим снова
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    var question = document.querySelector('.question');
-    var tooltip = question.querySelector('.tooltip');
-
-    question.addEventListener('click', function() {
-        tooltip.classList.toggle('hidden');
-    });
-});
 
 // функция проставляет метки времени
 function setATRTimes() {
