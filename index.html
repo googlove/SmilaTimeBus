@@ -626,13 +626,18 @@
 													<strong class="blinking" style="color: #b31a50;">🚍ДНІ КУРСУВАННЯ: ЩОДЕННО!</strong><br/>
 													<strong style="color: #b31a50;">⏰Години відправлення від ст.Шевченка</strong><br/>
 													<strong style="color: #b31a50;">⏰Інтервали між зупинками 2-4 хвилин</strong><br/>
-														<strong class="busstop">Ст.Шевченка:</strong>
+														<strong class="busstop">Ст.Шевченко:</strong>
+														<div class="question">
 														<span>06:30<em>&nbsp;(через Плоске)</em></span>
+														<span class="question-mark">?</span>
+														<div class="tooltip hidden">
+															<p>Щоденно</p>
+														</div>
 														<span>07:02<em>&nbsp;(через Плоске)</em></span>
 														<span>08:30<em>&nbsp;(через Плоске)</em></span>
 														<span>09:10<em>&nbsp;(через Плоске)</em></span>
 														<span>10:30</span>
-														<span>11:08</span>
+														<span>11:10</span>
 													</div>
 													<div class="col-md-12 timelist" style="color:#000000">
 														<strong class="busstop">Обід:</strong>
@@ -673,7 +678,7 @@
 														<strong class="busstop">Вечір:</strong>
 														<span>15:20<em>&nbsp;(через Плоске)</em></span>
 														<span>15:55<em>&nbsp;(через Плоске)</em></span>
-														<span>17:20<em>&nbsp;(через Плоске)</em></span>
+														<span>17:15<em>&nbsp;(через Плоске)</em></span>
 														<span>18:00<em>&nbsp;(через Плоске)</em></span>
 														<span>19:00<em></em></span>
 														</div>
@@ -2536,6 +2541,15 @@ function makeGrayTimes() {
 	});	
 	grayTimer = setTimeout(makeGrayTimes, 30*1000); // через 30 сек запустим снова
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+    var question = document.querySelector('.question');
+    var tooltip = question.querySelector('.tooltip');
+
+    question.addEventListener('click', function() {
+        tooltip.classList.toggle('hidden');
+    });
+});
 
 // функция проставляет метки времени
 function setATRTimes() {
