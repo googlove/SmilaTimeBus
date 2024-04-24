@@ -1,4 +1,3 @@
-
 .busname {
     display: inline-block;
     background-color: #007DD6;
@@ -17,7 +16,6 @@
     vertical-align: middle;
     box-shadow: 1px 1px 2px #B5B5B5;
     float: left;
-
 }
 
 .daytype a[data-days*="5"]{
