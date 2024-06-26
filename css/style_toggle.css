@@ -162,3 +162,10 @@ div.tc-tabs {
 .arrows {
     margin: 0 10px;
 }
+
+.tracking {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Вирівнювання вліво */
+    font-size: 0.99em; /* Зменшення розміру шрифту */
+}
